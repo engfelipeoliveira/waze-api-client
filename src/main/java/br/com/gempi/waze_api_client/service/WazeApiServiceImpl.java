@@ -60,7 +60,7 @@ public class WazeApiServiceImpl implements WazeApiService {
 		// Deleta obras finalizadas
 		List<String> idsWazeBd = this.obrasWazeJsonRepository.findAll().stream().map(ObrasWazeJsonEntity::getUuid).collect(toList());
 		List<String> idsWazeApi = waze.getAlerts().stream().map(Alert::getUuid).collect(toList());
-		List<String> idsDiff = idsWazeBd.stream().filter(element -> !idsWazeApi.contains(element)) .collect(toList());
+		List<String> idsDiff = idsWazeBd.stream().filter(element -> !idsWazeApi.contains(element)).collect(toList());
 		this.obrasWazeJsonRepository.deleteAllById(idsDiff);
 		
 		log.info("Fim - Total de registros {}", this.obrasWazeJsonRepository.count());
