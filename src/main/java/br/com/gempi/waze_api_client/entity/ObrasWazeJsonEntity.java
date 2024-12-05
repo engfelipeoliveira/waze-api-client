@@ -63,10 +63,10 @@ public class ObrasWazeJsonEntity implements Serializable {
 	private String street;
 
 	@Column(name = "LOCATION_X")
-	private BigDecimal locationX;
+	private String locationX;
 	
 	@Column(name = "LOCATION_Y")
-	private BigDecimal locationY;
+	private String locationY;
 
 	@Column(name = "PUBMILLIS")
 	private Long pubMillis;

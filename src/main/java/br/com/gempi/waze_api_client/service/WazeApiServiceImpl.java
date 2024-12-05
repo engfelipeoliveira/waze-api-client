@@ -1,11 +1,8 @@
 package br.com.gempi.waze_api_client.service;
 
 import static java.util.stream.Collectors.toList;
-import static org.apache.commons.lang3.StringUtils.equalsIgnoreCase;
 
-import java.math.BigDecimal;
 import java.util.List;
-import java.util.stream.Collectors;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
@@ -52,8 +49,8 @@ public class WazeApiServiceImpl implements WazeApiService {
 					.magvar(alert.getMagvar())
 					.subType(alert.getSubtype())
 					.street(alert.getStreet())
-					.locationX(alert.getLocation() != null && alert.getLocation().getX() != null ? new BigDecimal(alert.getLocation().getX()) : null)
-					.locationY(alert.getLocation() != null && alert.getLocation().getY() != null ? new BigDecimal(alert.getLocation().getY()) : null)
+					.locationX(alert.getLocation() != null && alert.getLocation().getX() != null ? alert.getLocation().getX().toString() : null)
+					.locationY(alert.getLocation() != null && alert.getLocation().getY() != null ? alert.getLocation().getY().toString() : null)
 					.pubMillis(alert.getPubMillis()).build();
 			this.obrasWazeJsonRepository.save(obrasWazeJsonEntity);
 		});
