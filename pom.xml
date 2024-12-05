@@ -22,9 +22,9 @@
 		<developer />
 	</developers>
 	<scm>
-		<connection>scm:git:git@github.com:engfelipeoliveira/waze-api-client.git</connection>
-		<developerConnection>scm:git:git@github.com:engfelipeoliveira/waze-api-client.git</developerConnection>
-		<url>https://github.com/engfelipeoliveira/waze-api-client</url>
+		<connection>scm:git:https://github.com/engfelipeoliveira/waze-api-client.git</connection>
+		<developerConnection>scm:git:https://github.com/engfelipeoliveira/waze-api-client.git</developerConnection>
+		<url>scm:git:https://github.com/engfelipeoliveira/waze-api-client.git</url>
 		<tag>HEAD</tag>
 	</scm>
 
@@ -74,6 +74,10 @@
 		<dependency>
 			<groupId>com.oracle.database.jdbc</groupId>
 			<artifactId>ojdbc8</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-lang3</artifactId>
 		</dependency>
 	</dependencies>
 
