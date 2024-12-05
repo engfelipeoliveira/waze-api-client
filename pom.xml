@@ -11,7 +11,7 @@
 	</parent>
 	<groupId>br.com.gempi</groupId>
 	<artifactId>waze-api-client</artifactId>
-	<version>0.0.1</version>
+	<version>0.0.1-SNAPSHOT</version>
 	<name>waze-api-client</name>
 	<description>Obter dados do Waze Data Feed</description>
 	<url />
