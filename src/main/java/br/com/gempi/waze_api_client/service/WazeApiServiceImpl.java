@@ -7,7 +7,6 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
-import org.springframework.util.StringUtils;
 import org.springframework.web.reactive.function.client.WebClient;
 
 import br.com.gempi.generated.Alert;
