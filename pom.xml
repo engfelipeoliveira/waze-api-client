@@ -11,7 +11,7 @@
 	</parent>
 	<groupId>br.com.gempi</groupId>
 	<artifactId>waze-api-client</artifactId>
-	<version>0.0.2-SNAPSHOT</version>
+	<version>0.0.1-SNAPSHOT</version>
 	<name>waze-api-client</name>
 	<description>Obter dados do Waze Data Feed</description>
 	<url />
@@ -22,21 +22,11 @@
 		<developer />
 	</developers>
 	<scm>
-		<connection>scm:git:https://github.com/engfelipeoliveira/waze-api-client.git</connection>
-		<developerConnection>scm:git:https://github.com/engfelipeoliveira/waze-api-client.git</developerConnection>
-		<url>scm:git:https://github.com/engfelipeoliveira/waze-api-client.git</url>
+		<connection>scm:git:git@github.com:engfelipeoliveira/waze-api-client.git</connection>
+		<developerConnection>scm:git:ssh://git@github.com:engfelipeoliveira/waze-api-client.git</developerConnection>
+		<url>https://github.com/engfelipeoliveira/waze-api-client</url>
 		<tag>HEAD</tag>
 	</scm>
-
-	<distributionManagement>
-		<repository>
-			<id>github</id>
-			<name>GitHub OWNER Apache Maven Packages</name>
-			<url>https://maven.pkg.github.com/engfelipeoliveira/waze-api-client</url>
-		</repository>
-	</distributionManagement>
-
-
 	<properties>
 		<java.version>21</java.version>
 	</properties>
@@ -83,10 +73,6 @@
 		<dependency>
 			<groupId>com.oracle.database.jdbc</groupId>
 			<artifactId>ojdbc8</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>org.apache.commons</groupId>
-			<artifactId>commons-lang3</artifactId>
 		</dependency>
 	</dependencies>
 
